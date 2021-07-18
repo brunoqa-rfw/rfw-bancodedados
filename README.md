@@ -42,11 +42,11 @@ Realize o login:
 
 Em seguida clique com o botão direito sobre o Server > Create > Server...
 
-![create_server](/uploads/1f0680f5fdfbaae2c5a156106f9953bf/create_server.png)
+![create_server](https://user-images.githubusercontent.com/87613026/126075928-4f875baf-e6f6-4f63-95c9-ef8ee373c709.png)
 
 Preencher com o nome **Local**:
 
-![create_server_general](/uploads/248d809e5081b69481c0ecf134a5a15f/create_server_general.png)
+![create_server_general](https://user-images.githubusercontent.com/87613026/126075974-2f34e87e-ecb3-4934-9a37-4f78331f81a9.png)
 
 Na aba Connection preencher conforme a imagem:
 - Host name: **teste-postgres**
@@ -54,7 +54,7 @@ Na aba Connection preencher conforme a imagem:
 - Username: **postgres**
 - Senha: **Postgres2021!**
 
-![create-server](/uploads/0669e1ec2733d7fed57403f8a51a5fb9/create-server.png)
+![create-server](https://user-images.githubusercontent.com/87613026/126076002-93acef7b-4c65-4107-a7c5-e9139f8f9a35.png)
 
 #### Criando Database SQL Server
 
@@ -67,16 +67,16 @@ Semelhante ao Postgres vamos criar a Database do SQL Server:
 - Login: **sa**
 - Senha: **MySql2021!**
 
-![sql_login](/uploads/4d71b113a2834850cc593a0387759a8e/sql_login.png)
+![sql_login](https://user-images.githubusercontent.com/87613026/126076018-c8e9c7d1-aa65-4d9d-a141-a7b051c858f9.png)
 
 Criando o Database (Banco de dados): Clique com o botão direito > Novo Banco De Dados
 
-![novo_bd](/uploads/83af411199246d023f324c11601e235d/novo_bd.png)
+![novo_bd](https://user-images.githubusercontent.com/87613026/126076025-25365cdc-b2a9-45a4-a474-4bb75595b48d.png)
 
 Preencha o campo:
 -  Nome do banco de dados: **robot**
 
-![nome_bd](/uploads/0dd773da700fc42454da1bdf889cfb3a/nome_bd.png)
+![nome_bd](https://user-images.githubusercontent.com/87613026/126076036-250937e5-aef1-455e-8ae0-1173a3d0c7e6.png)
 
 ### Criando ambiente virtual
 Execute o comando para realizar a instalação do ambiente virtual:
@@ -113,7 +113,7 @@ Instale-as em seu ambiente usando o comando:
 ## 🚀 Executando os testes
 Sempre que for executar os testes é necessário estar no ambiente virtual para que seja executado corretamente, com as devidas dependências.
 
-![cmd](/uploads/77ab2f3809e8becb51850c076fe362ae/cmd.png)
+![cmd](https://user-images.githubusercontent.com/87613026/126076055-e760f3ab-4e57-43a6-a72c-656888bc811c.png)
 
 #### Realizar testes com o BD Postgres
 ```batchfile
