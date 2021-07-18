@@ -1,0 +1,42 @@
+version: "3"
+
+services:
+  sqldata:
+      image: mcr.microsoft.com/mssql/server:2017-latest
+      restart: always
+      environment:
+        - SA_PASSWORD=MySql2021!
+        - ACCEPT_EULA=Y
+      ports:
+        - "1433:1433"
+      volumes:
+        - /var/opt/mssql
+
+  teste-postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: "Postgres2021!"
+    ports:
+      - "5432:5432"
+    volumes:
+      - /home/brunoqa/Desenvolvimento/Docker-Compose/PostgreSQL:/var/lib/postgresql/data 
+    networks:
+      - postgres-compose-network
+      
+  teste-pgadmin-compose:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "robot@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "PgAdmin2021!"
+    ports:
+      - "16543:80"
+    depends_on:
+      - teste-postgres
+    networks:
+      - postgres-compose-network
+
+networks:
+  postgres-compose-network:
+    driver: bridge

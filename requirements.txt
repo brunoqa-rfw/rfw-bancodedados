@@ -1,0 +1,4 @@
+psycopg2==2.9.1
+pymssql==2.2.1
+robotframework==4.0.3
+robotframework-databaselibrary==1.2.4
